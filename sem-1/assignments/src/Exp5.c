@@ -84,6 +84,7 @@ incorrectPin:
                 break;
             default:
                printf("Invalid Choice!!!!\n");
+               goto incorrectPin;
         }
     }
     else {
