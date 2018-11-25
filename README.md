@@ -1,2 +1,2 @@
-# project-euler
-Solutions to Project Euler problems
+# nmims-assignments
+All the assignments and practice codes given to me.
