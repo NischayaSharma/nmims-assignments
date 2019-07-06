@@ -1,4 +1,4 @@
 #gitignore 
 sem-1/assignments/bin/
 sem-1/parctice-codes/bin/
-./**/*.class
+./sem3/*.class
