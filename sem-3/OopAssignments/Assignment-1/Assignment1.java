@@ -93,11 +93,10 @@ class Assignment1 {
     static void ques8() {
         Scanner in = new Scanner(System.in);
         StringBuffer strBuff = new StringBuffer(in.next());
-        System.out.println(Integer.parseInt(strBuff.toString()));
+        int num1 = Integer.parseInt(strBuff.toString());
         StringBuffer revStr = strBuff.reverse();
-        System.out.println(Integer.parseInt(revStr.toString()));
-        System.out.println(Integer.parseInt(strBuff.toString()) == Integer.parseInt(revStr.toString()));
-        if (Integer.parseInt(strBuff.toString()) == Integer.parseInt(revStr.toString())) {
+        int num2 = Integer.parseInt(revStr.toString());
+        if (num1 == num2) {
             System.out.println("Palindrome.");
         } else {
             System.out.println("Not a palindrome.");
