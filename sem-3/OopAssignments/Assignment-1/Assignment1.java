@@ -94,8 +94,8 @@ class Assignment1 {
         Scanner in = new Scanner(System.in);
         StringBuffer strBuff = new StringBuffer(in.next());
         int num1 = Integer.parseInt(strBuff.toString());
-        StringBuffer revStr = strBuff.reverse();
-        int num2 = Integer.parseInt(revStr.toString());
+        strBuff.reverse();
+        int num2 = Integer.parseInt(strBuff.toString());
         if (num1 == num2) {
             System.out.println("Palindrome.");
         } else {
