@@ -1,6 +1,7 @@
 import java.util.*;
 
 class Assignment1 {
+    private static Scanner in = new Scanner(System.in);
     static int fact(int n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -9,7 +10,6 @@ class Assignment1 {
     }
 
     static void ques1() {
-        Scanner in = new Scanner(System.in);
         System.out.println("Enter a value for n:");
         int n = in.nextInt();
         int sum = 0;
@@ -20,7 +20,6 @@ class Assignment1 {
     }
 
     static void ques3() {
-        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k = 65;
         for (int i = 0; i < n; i++) {
@@ -32,7 +31,6 @@ class Assignment1 {
     }
 
     static void ques4() {
-        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k = 1;
         for (int i = 0; i < n; i++) {
@@ -44,7 +42,6 @@ class Assignment1 {
     }
 
     static void ques5() {
-        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         float sum = 0;
         for (int i = 0; i < n; i++) {
@@ -63,22 +60,16 @@ class Assignment1 {
     }
 
     static void ques6() {
-        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int sum = 0, temp = n;
         while (temp % 10 != 0) {
             sum += Math.pow(temp % 10, numOfDigits(n));
             temp = temp / 10;
         }
-        if (sum == n) {
-            System.out.println("Armstrong " + sum);
-        } else {
-            System.out.println("Not Armstrong " + sum);
-        }
+        System.out.println((sum == n)? "Armstrong ":"Not Armstrong " + sum);
     }
 
     static void ques7() {
-        Scanner in = new Scanner(System.in);
         int n = in.nextInt(), sumOdd = 0, sumEven = 0;
         for (int i = 1; i <= 2 * n; i++) {
             if (i % 2 == 0) {
@@ -91,12 +82,11 @@ class Assignment1 {
     }
 
     static void ques8() {
-        Scanner in = new Scanner(System.in);
         StringBuffer strBuff = new StringBuffer(in.next());
-        int num1 = Integer.parseInt(strBuff.toString());
+        String str1 = (strBuff.toString());
         strBuff.reverse();
-        int num2 = Integer.parseInt(strBuff.toString());
-        if (num1 == num2) {
+        String str2 = (strBuff.toString());
+        if (str1.equals(str2)) {
             System.out.println("Palindrome.");
         } else {
             System.out.println("Not a palindrome.");
@@ -104,27 +94,24 @@ class Assignment1 {
     }
 
     static void ques10() {
-        Scanner in = new Scanner(System.in);
         int num1 = in.nextInt();
         int num2 = num1 << 2;
         System.out.println(num2);
     }
 
     static void ques11() {
-        Scanner in = new Scanner(System.in);
         int num1 = in.nextInt();
         int num2 = num1 >> 3;
         System.out.println(num2);
     }
 
-    static void ques13() {
-        Scanner in = new Scanner(System.in);
+    static void ques12() {
         int num1 = in.nextInt();
         int num2 = num1>>3;
         System.out.println(num2);
     }
 
     public static void main(String[] args) {
-        ques13();
+        ques8();
     }
 }
