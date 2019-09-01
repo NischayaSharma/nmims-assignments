@@ -103,7 +103,28 @@ class Assignment1 {
         }
     }
 
+    static void ques10() {
+        Scanner in = new Scanner(System.in);
+        int num1 = in.nextInt();
+        int num2 = num1 << 2;
+        System.out.println(num2);
+    }
+
+    static void ques11() {
+        Scanner in = new Scanner(System.in);
+        int num1 = in.nextInt();
+        int num2 = num1 >> 3;
+        System.out.println(num2);
+    }
+
+    static void ques13() {
+        Scanner in = new Scanner(System.in);
+        int num1 = in.nextInt();
+        int num2 = num1>>3;
+        System.out.println(num2);
+    }
+
     public static void main(String[] args) {
-        ques8();
+        ques13();
     }
 }
