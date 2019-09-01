@@ -7,6 +7,7 @@ class Exp_5 implements Area{
         return (int)Math.sqrt(s*(s-a)*(s-b)*(s-c));
     }
     public static void main(String args[]){
-        
+        Scanner in = neww Scanner(System.in);
+        char choice = in.next();
     }
 }
