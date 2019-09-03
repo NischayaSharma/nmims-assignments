@@ -2,6 +2,7 @@ import java.util.*;
 
 class Assignment1 {
     private static Scanner in = new Scanner(System.in);
+
     static int fact(int n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -17,6 +18,23 @@ class Assignment1 {
             sum += 1 / fact(i);
         }
         System.out.println(sum);
+    }
+
+    static void ques2() {
+        Scanner sc = new Scanner(System.in);
+        double S = 0;
+        System.out.println("Enter value of a ");
+        int a = sc.nextInt();
+        System.out.println("Enter value of s0 ");
+        int s0 = sc.nextInt();
+        System.out.println("Enter value of v0");
+        int v0 = sc.nextInt();
+        S = (s0 + v0 + ((1.0) / (2 * a * 1 * 1)));
+        System.out.println("The value of S for 1 is : " + S);
+        for (int i = 5; i <= 100; i = i + 5) {
+            S = (s0 + v0 + ((1.0) / (2 * a * i * i)));
+            System.out.println("The value of S for " + i + " is : " + S);
+        }
     }
 
     static void ques3() {
@@ -66,7 +84,7 @@ class Assignment1 {
             sum += Math.pow(temp % 10, numOfDigits(n));
             temp = temp / 10;
         }
-        System.out.println((sum == n)? "Armstrong ":"Not Armstrong " + sum);
+        System.out.println((sum == n) ? "Armstrong " : "Not Armstrong " + sum);
     }
 
     static void ques7() {
@@ -107,11 +125,47 @@ class Assignment1 {
 
     static void ques12() {
         int num1 = in.nextInt();
-        int num2 = num1>>3;
+        int num2 = num1 >> 3;
         System.out.println(num2);
     }
 
     public static void main(String[] args) {
-        ques8();
+        switch (args[0]) {
+        case "1":
+            ques1();
+            break;
+        case "2":
+            ques2();
+            break;
+        case "3":
+            ques3();
+            break;
+        case "4":
+            ques4();
+            break;
+        case "5":
+            ques5();
+            break;
+        case "6":
+            ques6();
+            break;
+        case "7":
+            ques7();
+            break;
+        case "8":
+            ques8();
+            break;
+        case "10":
+            ques10();
+            break;
+        case "11":
+            ques11();
+            break;
+        case "12":
+            ques12();
+            break;
+        default:
+            System.out.println("Wrong option !!!!");
+        }
     }
 }
