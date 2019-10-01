@@ -36,6 +36,9 @@ class CalcSphere extends CalcCircle {
 public class MainQ4{
     public static void main(String[] args) {
         CalcSphere sphere = new CalcSphere();
+        CalcCircle circle = new CalcCircle();
+        circle.volume();
+        circle.display();
         sphere.volume();
         sphere.display();
     }
