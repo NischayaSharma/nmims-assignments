@@ -4,7 +4,7 @@ public class MainQ2
     Scanner in = new Scanner(System.in);
     double radius;
     double area;
-    Circle() {
+    MainQ2() {
         radius=0;
     }
     void AcceptRadius() {
@@ -20,7 +20,7 @@ public class MainQ2
         System.out.println("Area = " +area);
     }
     public static void main(String args[]) {
-        Circle obj = new Circle();
+        MainQ2 obj = new MainQ2();
         obj.AcceptRadius();
         obj.DisplayArea();
     }

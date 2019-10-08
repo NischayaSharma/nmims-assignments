@@ -1,5 +1,5 @@
 import java.util.*;
-public class Swapping
+public class MainQ3
 {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
