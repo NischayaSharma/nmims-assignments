@@ -17,5 +17,19 @@ object MainQ4{
                 print (""+((rad)*(180/pi)));
             }
         }
+        else if (choice == 2) {
+            print ("Enter:\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
+            choice = readInt();
+            if (choice == 1) {
+                print ("Enter the Temp in Celsius:\n");
+                var c = readDouble();
+                print ("Fahrenheit: "+((c*9/5)+32));
+            }
+            else if (choice == 2) {
+                print ("Enter the Temp in Fahrenheit:\n");
+                var f = readDouble();
+                print ("Celsius: "+((f-32)*5/9));
+            }
+        }
     }
 }
